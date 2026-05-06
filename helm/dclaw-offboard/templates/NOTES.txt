@@ -1,0 +1,4 @@
+DClaw Offboard deployed!
+
+Frontend: http://dclaw-offboard.local
+Backend API: http://dclaw-offboard-backend:8130
