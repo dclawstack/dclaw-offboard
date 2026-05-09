@@ -1,7 +1,27 @@
 FROM python:3.11-slim
-RUN apt-get update && apt-get install -y --no-install-recommends gcc libpq-dev && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
-COPY app ./app
-RUN pip install --no-cache-dir fastapi>=0.115.0 uvicorn[standard]>=0.32.0 sqlalchemy[asyncio]>=2.0.36 asyncpg>=0.30.0 pydantic>=2.9.0 pydantic-settings>=2.6.0 httpx>=0.27.0
-EXPOSE 
-CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", ""]
+
+RUN apt-get update && apt-get install -y --no-install-recommends gcc libpq-dev && \
+    pip install --no-cache-dir uv && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN uv pip install --system --no-cache -r requirements.txt
+
+COPY . .
+
+RUN groupadd -r appuser && useradd -r -g appuser appuser && \
+    chown -R appuser:appuser /app
+USER appuser
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8130
+
+EXPOSE 8130
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8130/health/')" || exit 1
+
+CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8130"]
