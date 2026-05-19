@@ -1,12 +1,25 @@
+"use client";
+
+import Navbar from "@/components/landing/Navbar";
+import HeroSection from "@/components/landing/HeroSection";
+import FeaturesSection from "@/components/landing/FeaturesSection";
+import WorkflowSection from "@/components/landing/WorkflowSection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import CTASection from "@/components/landing/CTASection";
+import Footer from "@/components/landing/Footer";
+import OffboardCopilot from "@/components/offboard-copilot";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold mb-4">DClaw App</h1>
-        <p className="text-lg text-gray-600">
-          Server is running. Replace this page with your dashboard.
-        </p>
-      </div>
-    </main>
-  )
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <HeroSection />
+      <FeaturesSection />
+      <WorkflowSection />
+      <TestimonialsSection />
+      <CTASection />
+      <Footer />
+      <OffboardCopilot />
+    </div>
+  );
 }

@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "logo": "DClaw Offboard",
+    "links": [
+      { "text": "Checklists", "href": "/checklists" },
+      { "text": "Assets", "href": "/assets" },
+      { "text": "Access", "href": "/access" },
+      { "text": "Interviews", "href": "/interviews" },
+      { "text": "Knowledge", "href": "/knowledge" },
+      { "text": "Alumni", "href": "/alumni" },
+      { "text": "Payroll", "href": "/payroll" }
+    ]
+  },
+  "departments": [
+    "engineering",
+    "sales",
+    "marketing",
+    "hr",
+    "finance",
+    "legal",
+    "product",
+    "design",
+    "operations",
+    "customer_support"
+  ],
+  "taskCategories": [
+    { "value": "it", "label": "IT", "color": "#3B82F6" },
+    { "value": "hr", "label": "HR", "color": "#8B5CF6" },
+    { "value": "finance", "label": "Finance", "color": "#10B981" },
+    { "value": "manager", "label": "Manager", "color": "#F59E0B" },
+    { "value": "legal", "label": "Legal", "color": "#EF4444" },
+    { "value": "facilities", "label": "Facilities", "color": "#6B7280" }
+  ],
+  "assetTypes": [
+    "laptop", "phone", "key", "card", "peripheral", "security_key", "other"
+  ],
+  "systemTypes": [
+    "saas", "email", "vpn", "physical", "cloud", "other"
+  ],
+  "contentTypes": [
+    "project_docs", "contacts", "passwords", "processes", "other"
+  ],
+  "rehireEligibility": [
+    "eligible", "conditional", "not_eligible", "pending_review"
+  ]
+}

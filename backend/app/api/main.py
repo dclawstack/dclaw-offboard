@@ -28,6 +28,6 @@ app.add_middleware(
 )
 
 app.include_router(health.router, prefix="/health", tags=["health"])
-# TODO: Wire v1 routers here after creating them
-# from app.api.v1 import some_router
-# app.include_router(some_router.router, prefix="/api/v1/some", tags=["some"])
+
+from app.api.v1.offboarding import router as v1_router
+app.include_router(v1_router, prefix="/api/v1")

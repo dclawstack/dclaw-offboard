@@ -1,0 +1,27 @@
+{
+  "app_id": "offboard",
+  "name": "DClaw Offboard",
+  "version": "1.2.0",
+  "category": "HR",
+  "tagline": "Secure offboarding",
+  "description": "AI-powered offboarding platform with smart checklists, asset recovery, access revocation, exit interviews, knowledge transfer, alumni network, and final pay calculations.",
+  "color": "#6366F1",
+  "icon": "user-x",
+  "ports": {
+    "backend": 8130,
+    "frontend": 3044
+  },
+  "features": [
+    "AI Offboard Copilot",
+    "Smart Offboarding Checklists",
+    "Asset Recovery & Inventory",
+    "Access Revocation Automation",
+    "AI Exit Interview Analysis",
+    "Knowledge Transfer & Handover",
+    "Alumni Network & Rehire Tracking",
+    "Final Pay & Compliance Calculator"
+  ],
+  "status": "active",
+  "repository": "https://github.com/dclawstack/dclaw-offboard",
+  "docs": "/docs"
+}

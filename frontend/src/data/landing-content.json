@@ -1,0 +1,148 @@
+{
+  "app": {
+    "id": "offboard",
+    "name": "DClaw Offboard",
+    "tagline": "Secure Offboarding, Simplified",
+    "description": "AI-powered offboarding platform that automates compliance, protects company assets, and preserves institutional knowledge — all while treating departing employees with dignity.",
+    "category": "HR",
+    "color": "#6366F1",
+    "version": "1.2.0"
+  },
+  "hero": {
+    "headline": "Offboarding That Protects Your Business",
+    "subheadline": "Automate compliance, recover assets, revoke access, and capture critical knowledge with AI-powered workflows.",
+    "ctaPrimary": {
+      "text": "Start an Offboarding",
+      "href": "/checklists/create"
+    },
+    "ctaSecondary": {
+      "text": "Talk to AI Copilot",
+      "href": "#copilot"
+    },
+    "stats": [
+      { "value": "47%", "label": "Faster offboarding" },
+      { "value": "100%", "label": "Compliance coverage" },
+      { "value": "20+", "label": "Systems integrated" }
+    ]
+  },
+  "features": [
+    {
+      "id": "copilot",
+      "title": "AI Offboard Copilot",
+      "description": "An intelligent assistant that guides managers through compliant, compassionate offboarding. Get instant answers about final pay, benefits, references, and compliance — personalized to each employee's role and tenure.",
+      "icon": "Bot",
+      "href": "/copilot",
+      "priority": "P0",
+      "color": "#818CF8"
+    },
+    {
+      "id": "checklists",
+      "title": "Smart Offboarding Checklists",
+      "description": "Auto-generated checklists tailored to department and role. Track IT, HR, finance, and manager tasks with dependencies, deadlines, and real-time progress tracking.",
+      "icon": "ClipboardCheck",
+      "href": "/checklists",
+      "priority": "P0",
+      "color": "#34D399"
+    },
+    {
+      "id": "assets",
+      "title": "Asset Recovery & Inventory",
+      "description": "Track every company asset — laptops, phones, keys, badges. Auto-generate recovery lists, record conditions, and generate shipping labels for remote employees.",
+      "icon": "Package",
+      "href": "/assets",
+      "priority": "P0",
+      "color": "#FBBF24"
+    },
+    {
+      "id": "access",
+      "title": "Access Revocation Automation",
+      "description": "One-click revocation across 20+ systems. Revoke email, Slack, GitHub, VPN, and building access with full audit trails. Know exactly who revoked what and when.",
+      "icon": "ShieldOff",
+      "href": "/access",
+      "priority": "P0",
+      "color": "#F87171"
+    },
+    {
+      "id": "interviews",
+      "title": "AI Exit Interview Analysis",
+      "description": "Schedule and conduct exit interviews with AI transcription and sentiment analysis. Extract themes, identify trends, and generate actionable insights for leadership.",
+      "icon": "MessageSquare",
+      "href": "/interviews",
+      "priority": "P1",
+      "color": "#A78BFA"
+    },
+    {
+      "id": "knowledge",
+      "title": "Knowledge Transfer & Handover",
+      "description": "Structured templates for capturing project docs, contacts, passwords, and process documentation. AI-powered knowledge extraction identifies gaps before they become problems.",
+      "icon": "BookOpen",
+      "href": "/knowledge",
+      "priority": "P1",
+      "color": "#60A5FA"
+    },
+    {
+      "id": "alumni",
+      "title": "Alumni Network & Rehire Tracking",
+      "description": "Maintain positive relationships with former employees. Track rehire eligibility, send anniversary check-ins, and build a talent pipeline for boomerang hires.",
+      "icon": "Users",
+      "href": "/alumni",
+      "priority": "P1",
+      "color": "#F472B6"
+    },
+    {
+      "id": "payroll",
+      "title": "Final Pay & Compliance Calculator",
+      "description": "Accurate to the penny. Calculate final pay, unused PTO payout, severance, and deductions. Generate compliance reports with state-law validation.",
+      "icon": "Calculator",
+      "href": "/payroll",
+      "priority": "P1",
+      "color": "#2DD4BF"
+    }
+  ],
+  "workflow": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Create Checklist",
+        "description": "Enter employee details and we auto-generate a role-specific offboarding checklist with IT, HR, finance, and manager tasks."
+      },
+      {
+        "number": 2,
+        "title": "Execute & Track",
+        "description": "Assign tasks, track progress in real-time, and let the AI Copilot guide you through every compliance requirement."
+      },
+      {
+        "number": 3,
+        "title": "Revoke & Recover",
+        "description": "One-click revocation of all system access. Track asset returns with condition assessment and shipping labels."
+      },
+      {
+        "number": 4,
+        "title": "Learn & Improve",
+        "description": "AI-analyzed exit interviews reveal retention insights. Alumni network keeps your talent pipeline warm."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "DClaw Offboard cut our offboarding time by 60% and eliminated the compliance anxiety. The audit trail alone is worth it.",
+      "author": "Sarah Chen",
+      "role": "VP of People, TechScale"
+    },
+    {
+      "quote": "The AI Copilot guided us through a complex offboarding with multi-state compliance requirements. Would have taken weeks without it.",
+      "author": "Marcus Rivera",
+      "role": "HR Director, CloudBase"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 DClaw Stack. All rights reserved.",
+    "links": [
+      { "text": "Documentation", "href": "/docs" },
+      { "text": "API Reference", "href": "/api/docs" },
+      { "text": "Privacy Policy", "href": "/privacy" },
+      { "text": "Terms of Service", "href": "/terms" }
+    ]
+  }
+}
