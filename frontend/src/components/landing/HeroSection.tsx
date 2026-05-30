@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
             <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: app.color }} />
-            <span className="text-sm text-gray-600">AI-Powered Offboarding Platform</span>
+            <span className="text-sm text-gray-600">Intelligent Offboarding & Risk Management Platform</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]">
@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto">
             {hero.stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-gray-900">{stat.value}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">{stat.value}</div>
                 <div className="text-xs sm:text-sm text-gray-500 mt-1">{stat.label}</div>
               </div>
             ))}

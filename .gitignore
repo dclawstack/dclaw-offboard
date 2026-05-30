@@ -8,3 +8,12 @@
 # Environment
 .env
 .env.local
+
+# TestSprite-generated artifacts (tests, reports — regenerated on demand)
+testsprite_tests/
+
+# Playwright
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/playwright/.cache/

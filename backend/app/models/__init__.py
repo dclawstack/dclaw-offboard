@@ -12,5 +12,16 @@ from app.models.offboarding import (  # noqa: F401 — required for alembic
     OffboardingChecklist,
     OffboardingTask,
 )
+from app.models.offboarding_v13 import (  # noqa: F401 — v1.3 features
+    ComplianceReport,
+    CoverageItem,
+    FlightRiskAlert,
+    Integration,
+    IntegrationAction,
+    NonCompeteTracker,
+    RiskAssessment,
+    SentimentPulse,
+    TeamTransition,
+)
 
 __all__ = ["Base"]

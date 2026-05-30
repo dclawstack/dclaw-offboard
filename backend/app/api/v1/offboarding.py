@@ -99,7 +99,7 @@ def _paginated(items: list, total: int, page: int, page_size: int) -> dict:
 # P0.1: AI Copilot
 # ══════════════════════════════════════════════════════════════════════════════
 
-@router.post("/ai/copilot", response_model=CopilotResponse, tags=["AI"])
+@router.post("/ai/offboard-chat", response_model=CopilotResponse, tags=["AI"])
 async def copilot_chat(request: CopilotRequest):
     """Chat with the AI Offboard Copilot."""
     return await generate_copilot_response(request)

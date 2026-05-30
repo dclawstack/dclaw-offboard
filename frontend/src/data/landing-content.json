@@ -6,11 +6,11 @@
     "description": "AI-powered offboarding platform that automates compliance, protects company assets, and preserves institutional knowledge — all while treating departing employees with dignity.",
     "category": "HR",
     "color": "#6366F1",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "hero": {
-    "headline": "Offboarding That Protects Your Business",
-    "subheadline": "Automate compliance, recover assets, revoke access, and capture critical knowledge with AI-powered workflows.",
+    "headline": "Intelligent Offboarding for the Modern Enterprise",
+    "subheadline": "Detect risks before they escalate, automate compliance, orchestrate integrations, and protect your IP — all with AI-powered workflows.",
     "ctaPrimary": {
       "text": "Start an Offboarding",
       "href": "/checklists/create"
@@ -20,16 +20,40 @@
       "href": "#copilot"
     },
     "stats": [
-      { "value": "47%", "label": "Faster offboarding" },
+      { "value": "63%", "label": "Faster offboarding" },
       { "value": "100%", "label": "Compliance coverage" },
-      { "value": "20+", "label": "Systems integrated" }
+      { "value": "50+", "label": "Integrations" }
     ]
   },
+  "featureTiers": [
+    {
+      "tier": "P0",
+      "label": "Core Platform",
+      "description": "Foundation features required for every offboarding — shipped and production-ready."
+    },
+    {
+      "tier": "P1",
+      "label": "AI-Powered Intelligence",
+      "description": "Advanced AI capabilities that automate analysis, capture knowledge, and connect your entire SaaS stack."
+    },
+    {
+      "tier": "P2",
+      "label": "Enterprise Analytics",
+      "description": "Deep compliance automation, predictive analytics, and team continuity planning."
+    }
+  ],
   "features": [
     {
       "id": "copilot",
+      "tier": "P0",
       "title": "AI Offboard Copilot",
-      "description": "An intelligent assistant that guides managers through compliant, compassionate offboarding. Get instant answers about final pay, benefits, references, and compliance — personalized to each employee's role and tenure.",
+      "description": "An intelligent assistant that guides managers and employees through compliant, compassionate offboarding. Get instant answers on final pay, benefits, references, and policies.",
+      "bullets": [
+        "RAG-powered answers on final pay, benefits & references",
+        "Personalized by employee role, tenure, and department",
+        "Available 24/7 via floating chat widget in the portal",
+        "Reduces HR ticket volume by up to 40%"
+      ],
       "icon": "Bot",
       "href": "/copilot",
       "priority": "P0",
@@ -37,35 +61,63 @@
     },
     {
       "id": "checklists",
+      "tier": "P0",
       "title": "Smart Offboarding Checklists",
-      "description": "Auto-generated checklists tailored to department and role. Track IT, HR, finance, and manager tasks with dependencies, deadlines, and real-time progress tracking.",
+      "description": "Auto-generated checklists tailored to department and role. Track IT, HR, finance, legal, and manager tasks with dependencies and real-time progress.",
+      "bullets": [
+        "Role-aware auto-generation based on department and seniority",
+        "IT, HR, finance, legal & manager task tracks in parallel",
+        "Task dependencies, deadline enforcement & owner assignment",
+        "Asset recovery integrated as a task type — no separate flow"
+      ],
       "icon": "ClipboardCheck",
       "href": "/checklists",
       "priority": "P0",
       "color": "#34D399"
     },
     {
-      "id": "assets",
-      "title": "Asset Recovery & Inventory",
-      "description": "Track every company asset — laptops, phones, keys, badges. Auto-generate recovery lists, record conditions, and generate shipping labels for remote employees.",
-      "icon": "Package",
-      "href": "/assets",
-      "priority": "P0",
-      "color": "#FBBF24"
-    },
-    {
       "id": "access",
+      "tier": "P0",
       "title": "Access Revocation Automation",
-      "description": "One-click revocation across 20+ systems. Revoke email, Slack, GitHub, VPN, and building access with full audit trails. Know exactly who revoked what and when.",
+      "description": "One-click revocation of system access across your entire SaaS stack. Full audit trail and compliance logs for every revocation event.",
+      "bullets": [
+        "One-click revocation across 50+ integrated systems",
+        "Revoke email, Slack, GitHub, VPN & building access simultaneously",
+        "Tamper-proof audit trail for GDPR, SOC2 & EEOC compliance",
+        "Native Okta, Azure AD & Google Workspace connectors"
+      ],
       "icon": "ShieldOff",
       "href": "/access",
       "priority": "P0",
       "color": "#F87171"
     },
     {
+      "id": "risk",
+      "tier": "P1",
+      "title": "Risk Assessment & IP Protection",
+      "description": "AI anomaly detection flags suspicious activity 30–90 days before departure. Monitor file access, downloads, and email forwarding to protect company IP.",
+      "bullets": [
+        "AI anomaly detection on file access, downloads & email forwarding",
+        "30/60/90-day pre-departure monitoring windows",
+        "Automatic forensic evidence preservation with chain of custody",
+        "Risk scoring (low / medium / high / critical) per employee"
+      ],
+      "icon": "AlertTriangle",
+      "href": "/risk",
+      "priority": "P1",
+      "color": "#EF4444"
+    },
+    {
       "id": "interviews",
+      "tier": "P1",
       "title": "AI Exit Interview Analysis",
-      "description": "Schedule and conduct exit interviews with AI transcription and sentiment analysis. Extract themes, identify trends, and generate actionable insights for leadership.",
+      "description": "Schedule and conduct exit interviews with AI transcription and sentiment analysis. Extract themes, identify retention trends, and generate actionable leadership insights.",
+      "bullets": [
+        "Async or live interview scheduling with automated reminders",
+        "AI transcription + sentiment scoring (positive / neutral / negative)",
+        "Automatic theme clustering and trend detection across cohorts",
+        "Retention insight reports delivered to leadership dashboards"
+      ],
       "icon": "MessageSquare",
       "href": "/interviews",
       "priority": "P1",
@@ -73,17 +125,47 @@
     },
     {
       "id": "knowledge",
-      "title": "Knowledge Transfer & Handover",
-      "description": "Structured templates for capturing project docs, contacts, passwords, and process documentation. AI-powered knowledge extraction identifies gaps before they become problems.",
-      "icon": "BookOpen",
+      "tier": "P1",
+      "title": "AI Knowledge Capture",
+      "description": "Real-time AI extraction from meetings, chats, and documents. Auto-generate structured handover docs and validate completeness — no manual forms required.",
+      "bullets": [
+        "AI extraction from meetings, Slack threads & documents",
+        "Structured handover document generation with gap detection",
+        "Completeness validation before final offboarding sign-off",
+        "Auto-populates the company knowledge base for future hires"
+      ],
+      "icon": "BrainCircuit",
       "href": "/knowledge",
       "priority": "P1",
       "color": "#60A5FA"
     },
     {
+      "id": "integrations",
+      "tier": "P1",
+      "title": "Integration Hub",
+      "description": "API-first connectors for HRIS, SSO, Payroll, MDM, and Communication tools. Orchestrate offboarding across your entire SaaS stack with webhooks and real-time sync.",
+      "bullets": [
+        "Pre-built connectors: Workday, BambooHR, Okta, ADP, Jamf, Slack",
+        "Webhook engine for custom integration with any internal system",
+        "Integration health dashboard with real-time sync status",
+        "One-click offboarding orchestration across all connected apps"
+      ],
+      "icon": "Blocks",
+      "href": "/integrations",
+      "priority": "P1",
+      "color": "#FBBF24"
+    },
+    {
       "id": "alumni",
-      "title": "Alumni Network & Rehire Tracking",
-      "description": "Maintain positive relationships with former employees. Track rehire eligibility, send anniversary check-ins, and build a talent pipeline for boomerang hires.",
+      "tier": "P1",
+      "title": "Alumni Network & Rehire",
+      "description": "Maintain positive relationships with former employees. Track rehire eligibility, send anniversary check-ins, and build a boomerang hire talent pipeline.",
+      "bullets": [
+        "Alumni CRM with rehire eligibility flags and notes",
+        "Automated anniversary check-ins and engagement sequences",
+        "Boomerang hire pipeline integrated with your ATS",
+        "Referral campaign tools leveraging the alumni network"
+      ],
       "icon": "Users",
       "href": "/alumni",
       "priority": "P1",
@@ -91,47 +173,102 @@
     },
     {
       "id": "payroll",
-      "title": "Final Pay & Compliance Calculator",
-      "description": "Accurate to the penny. Calculate final pay, unused PTO payout, severance, and deductions. Generate compliance reports with state-law validation.",
-      "icon": "Calculator",
+      "tier": "P1",
+      "title": "Payroll Integration Hub",
+      "description": "Connect directly to ADP, Gusto, QuickBooks, and more. Pull real-time salary, PTO balance, and tax data to auto-calculate final pay in seconds.",
+      "bullets": [
+        "Live sync with ADP, Gusto, QuickBooks & Xero payroll APIs",
+        "Auto-calculates final pay including unused PTO & severance",
+        "State and federal tax table compliance built in",
+        "Eliminates manual entry errors that cause compliance gaps"
+      ],
+      "icon": "Landmark",
       "href": "/payroll",
       "priority": "P1",
       "color": "#2DD4BF"
+    },
+    {
+      "id": "compliance",
+      "tier": "P2",
+      "title": "Compliance Automation",
+      "description": "Auto-generate EEOC, GDPR, CCPA, SOC2 reports with AI validation. Enforce data retention policies, track non-competes, and maintain audit-ready documentation.",
+      "bullets": [
+        "One-click generation of EEOC, OSHA, GDPR, CCPA & SOC2 reports",
+        "AI validation checks report completeness before submission",
+        "Automated data deletion schedules per retention policy",
+        "Non-compete & NDA tracking with expiration alerts"
+      ],
+      "icon": "Scale",
+      "href": "/compliance",
+      "priority": "P2",
+      "color": "#10B981"
+    },
+    {
+      "id": "sentiment",
+      "tier": "P2",
+      "title": "Sentiment & Early Warning",
+      "description": "Anonymous pulse surveys and AI sentiment analysis detect flight risk before the resignation letter arrives. Proactive retention recommendations based on behavioral signals.",
+      "bullets": [
+        "Anonymous pulse surveys measuring engagement & burnout",
+        "AI sentiment trend analysis across teams and departments",
+        "Flight risk prediction model using behavioral signals",
+        "Retention recommendation engine with personalized interventions"
+      ],
+      "icon": "Activity",
+      "href": "/sentiment",
+      "priority": "P2",
+      "color": "#EC4899"
+    },
+    {
+      "id": "teams",
+      "tier": "P2",
+      "title": "Team Transition & Coverage",
+      "description": "Auto-reassign direct reports, transfer calendars, identify coverage gaps, and manage temporary assignments — ensuring zero disruption during departures.",
+      "bullets": [
+        "Auto-reassignment of direct reports to new managers",
+        "Calendar and recurring meeting transfer with one click",
+        "Coverage gap detection for critical responsibilities",
+        "Temporary assignment tracking with expiration dates"
+      ],
+      "icon": "UsersRound",
+      "href": "/teams",
+      "priority": "P2",
+      "color": "#F59E0B"
     }
   ],
   "workflow": {
-    "title": "How It Works",
+    "title": "Modern Offboarding Workflow",
     "steps": [
       {
         "number": 1,
-        "title": "Create Checklist",
-        "description": "Enter employee details and we auto-generate a role-specific offboarding checklist with IT, HR, finance, and manager tasks."
+        "title": "Detect & Assess",
+        "description": "AI monitors for early warning signals. Once offboarding is triggered, risk assessment analyzes data access patterns and flags anomalies."
       },
       {
         "number": 2,
-        "title": "Execute & Track",
-        "description": "Assign tasks, track progress in real-time, and let the AI Copilot guide you through every compliance requirement."
+        "title": "Orchestrate & Execute",
+        "description": "Integration Hub orchestrates checklist creation, access revocation, and asset recovery across 50+ connected systems in minutes."
       },
       {
         "number": 3,
-        "title": "Revoke & Recover",
-        "description": "One-click revocation of all system access. Track asset returns with condition assessment and shipping labels."
+        "title": "Capture & Transition",
+        "description": "AI captures institutional knowledge in real-time. Team transition tools ensure seamless coverage with zero disruption."
       },
       {
         "number": 4,
-        "title": "Learn & Improve",
-        "description": "AI-analyzed exit interviews reveal retention insights. Alumni network keeps your talent pipeline warm."
+        "title": "Learn & Comply",
+        "description": "AI-analyzed exit interviews reveal retention insights. Automated compliance reports satisfy EEOC, GDPR, SOC2 requirements."
       }
     ]
   },
   "testimonials": [
     {
-      "quote": "DClaw Offboard cut our offboarding time by 60% and eliminated the compliance anxiety. The audit trail alone is worth it.",
+      "quote": "The risk assessment caught a departing engineer downloading our entire codebase. We were able to preserve evidence and take action within hours.",
       "author": "Sarah Chen",
       "role": "VP of People, TechScale"
     },
     {
-      "quote": "The AI Copilot guided us through a complex offboarding with multi-state compliance requirements. Would have taken weeks without it.",
+      "quote": "Integration Hub cut our offboarding from 3 weeks to 3 hours. One-click revocation across 50+ systems is a game changer for compliance.",
       "author": "Marcus Rivera",
       "role": "HR Director, CloudBase"
     }
@@ -140,7 +277,6 @@
     "copyright": "© 2026 DClaw Stack. All rights reserved.",
     "links": [
       { "text": "Documentation", "href": "/docs" },
-      { "text": "API Reference", "href": "/api/docs" },
       { "text": "Privacy Policy", "href": "/privacy" },
       { "text": "Terms of Service", "href": "/terms" }
     ]

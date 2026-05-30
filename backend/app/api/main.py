@@ -31,3 +31,6 @@ app.include_router(health.router, prefix="/health", tags=["health"])
 
 from app.api.v1.offboarding import router as v1_router
 app.include_router(v1_router, prefix="/api/v1")
+
+from app.api.v1.offboarding_v13 import router as v13_router
+app.include_router(v13_router, prefix="/api/v1")
